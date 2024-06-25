@@ -9,22 +9,25 @@ body, html {
     width: 100%;
 }
 
-.master-container{
+.master-container {
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
-    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
 
 }
 
 .header-container {
-    display: flex;
+    display: grid;
     justify-content: center;
+    grid-column: 1 / span 5;
+    grid-row: 1;
     background-color: rgba(0, 0, 0, 0.5);
+    height: 50%;
+
 }
 
 #textInHeader,
-#centerScreen
-{
+#centerScreen {
     font-family: "Spirax", sans-serif;
 
 }
@@ -33,19 +36,52 @@ body, html {
     display: grid;
     grid-template-columns: repeat(3, minmax(1em, 4em));
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     cursor: pointer;
     text-align: center;
     font-weight: bold;
 }
-#centerScreen
-{
-    text-align: center;
-    font-size: 7em;
+
+#centerScreen {
+    display: grid;
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    font-size: 90px;
     margin-bottom: 100px;
-    padding: 10px;
     font-weight: bold;
-    color: rgb(141, 0 ,1);
+    color: rgb(141, 0, 1);
+    text-align: center;
+}
+
+.redBar-container {
+    font-family: "Poiret One", sans-serif;
+    display: grid;
+    grid-column: 1/span4;
+    grid-row: 3;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    gap: 20px;
+    font-size: 30px;
 
 }
 
+.redBar {
+    background-color: rgba(115, 3, 6, 0.5);
+    padding: 10px;
+    color: white;
+    align-items: center;
+    margin-right: -200px;
+}
+
+.redBar:first-child {
+    justify-self: end;
+    grid-area: 1/1;
+
+}
+
+.redBar:nth-child(2) {
+
+    justify-self: start;
+    grid-area: 2/2;
+
+}
