@@ -9,20 +9,43 @@ body, html {
     width: 100%;
 }
 
+.master-container{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    align-items: center;
+
+}
+
 .header-container {
     display: flex;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#TextInHeader {
+#textInHeader,
+#centerScreen
+{
+    font-family: "Spirax", sans-serif;
+
+}
+
+#textInHeader {
     display: grid;
     grid-template-columns: repeat(3, minmax(1em, 4em));
-    font-family: "Spirax", sans-serif;
     color: white;
     font-size: 50px;
     cursor: pointer;
     text-align: center;
+    font-weight: bold;
+}
+#centerScreen
+{
+    text-align: center;
+    font-size: 7em;
+    margin-bottom: 100px;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(141, 0 ,1);
 
 }
 
