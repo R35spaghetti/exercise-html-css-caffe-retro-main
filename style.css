@@ -1,6 +1,12 @@
-body {
+.bg-hot {
     margin: 0;
     background-image: url('assets/hot.jpg');
+    background-size: cover;
+    background-position: 100% 30%;
+}
+.bg-juicy {
+    margin: 0;
+    background-image: url('assets/juicy.jpg');
     background-size: cover;
     background-position: 100% 30%;
 }
