@@ -17,7 +17,10 @@
     background-size: cover;
     background-position: 100% 30%;
 }
-
+ a{
+     color: rgb(141, 0, 1);
+     text-decoration: none;
+ }
 .header-container {
     display: flex;
     justify-content: center;
