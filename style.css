@@ -1,35 +1,25 @@
-
-body, html {
+body {
     margin: 0;
-    padding: 0;
     background-image: url('assets/hot.jpg');
     background-size: cover;
     background-position: 100% 30%;
-    height: 100%;
-    width: 100%;
-}
-
-.master-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 0.5fr);
-
 }
 
 .header-container {
-    display: grid;
+    display: flex;
     justify-content: center;
-    grid-column: 1 / span 5;
-    grid-row: 1;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 80%;
-
 }
 
 #textInHeader,
-#centerScreen {
+#titelWord {
     font-family: "Spirax", sans-serif;
 
+}
+
+.redBar-container,
+#menu {
+    font-family: "Poiret One", sans-serif;
 }
 
 #textInHeader {
@@ -42,27 +32,25 @@ body, html {
     font-weight: bold;
 }
 
-#centerScreen {
-    display: grid;
-    grid-column: 1 / span 4;
-    grid-row: 2;
+.titel-container {
+    display: flex;
+    justify-content: center;
+}
+
+#titelWord {
     font-size: 90px;
-    margin-bottom: 100px;
+    margin: 10px;
     font-weight: bold;
     color: rgb(141, 0, 1);
-    text-align: center;
 }
 
 .redBar-container {
-    font-family: "Poiret One", sans-serif;
     display: grid;
-    grid-column: 1/span4;
-    grid-row: 3;
     grid-template-columns:repeat(2, 1fr);
     grid-template-rows:repeat(2, 1fr);
     gap: 20px;
     font-size: 30px;
-
+    margin: 10px;
 }
 
 .redBar {
@@ -70,38 +58,38 @@ body, html {
     padding: 10px;
     color: white;
     align-items: center;
-    margin-right: -200px;
 }
 
 .redBar:first-child {
     justify-self: end;
     grid-area: 1/1;
-
 }
 
 .redBar:nth-child(2) {
-
     justify-self: start;
     grid-area: 2/2;
+}
 
+.menu-container {
+    display: flex;
+    justify-content: center;
 }
 
 #menu {
     display: grid;
-    grid-column: 2/span 2;
-    grid-row: 4;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    margin: 20px;
-
-
+    margin: 10px;
+    width: 50%;
+    height: 50%;
+    padding-right: 40px;
+    font-size: 30px;
 }
 
 #menu li {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    padding: 10px;
     justify-content: space-between;
 }
 
