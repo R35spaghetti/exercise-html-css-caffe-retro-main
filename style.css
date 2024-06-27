@@ -2,11 +2,6 @@ body {
     margin: 0;
 }
 
-a {
-    color: rgb(141, 0, 1);
-    text-decoration: none;
-}
-
 .subject-section {
     display: flex;
     flex-direction: column;
@@ -67,6 +62,7 @@ a {
 .headerLink {
     cursor: pointer;
     color: white;
+    text-decoration: none;
 }
 
 .title-container {
