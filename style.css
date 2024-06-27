@@ -63,7 +63,7 @@ a {
 }
 
 #textInHeader,
-.titelWord {
+.titleWord {
     font-family: "Spirax", sans-serif;
 
 }
@@ -83,14 +83,15 @@ a {
     font-weight: bold;
 }
 
-.titel-container {
+.title-container {
     display: flex;
     justify-content: center;
+    position: relative;
+    top: -74px;
 }
 
-.titelWord {
-    font-size: 90px;
-    margin: 10px;
+.titleWord {
+    font-size: 113px;
     font-weight: bold;
     color: rgb(141, 0, 1);
 }
