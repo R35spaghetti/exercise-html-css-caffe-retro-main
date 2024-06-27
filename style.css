@@ -72,7 +72,7 @@ a {
     display: flex;
     justify-content: center;
     position: relative;
-    top: -74px;
+    transform: translateY(-68px);
 }
 
 .titleWord {
