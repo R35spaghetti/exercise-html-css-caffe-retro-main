@@ -12,7 +12,7 @@ body {
     background-size: cover;
     margin: 0;
     height: 100vh;
-    border-bottom: rgb(141,0,1) solid 1rem;
+    border-bottom: rgb(141, 0, 1) solid 1rem;
 }
 
 #hot {
@@ -117,8 +117,9 @@ a {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     margin: 10px;
-    padding-right: 40px;
+    padding: 0 40px;
     font-size: 30px;
+    width: 100vh;
 }
 
 .menu li {
