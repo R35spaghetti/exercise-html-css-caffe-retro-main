@@ -3,47 +3,28 @@ body {
 }
 
 .subject-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    height: 100vh;
+    border-bottom: red solid 1rem;
 }
 
 #hot {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
     background-image: url('assets/hot.jpg');
-    background-size: cover;
-    height: 100vh;
-    border-bottom: red solid 1rem;
-
 }
 
 #juicy {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
     background-image: url('assets/juicy.jpg');
-    height: 100vh;
-    border-bottom: red solid 1rem;
-
-
 }
 
 #cozy {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
     background-image: url('assets/cosy.jpg');
-    background-size: cover;
-    height: 100vh;
-
 }
 
 a {
