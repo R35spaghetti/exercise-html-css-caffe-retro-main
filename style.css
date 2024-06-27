@@ -102,7 +102,6 @@ a {
     justify-self: start;
     grid-area: 1/1/1/span 8;
 }
-/*end */
 .redBar:nth-child(2) {
     justify-self: start;
     grid-area: 2/4/2/span 8;
