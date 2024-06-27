@@ -83,7 +83,7 @@ a {
 
 .redBar-container {
     display: grid;
-    grid-template-columns:repeat(8, 1fr);
+    grid-template-columns:repeat(4, 10rem);
     grid-template-rows:repeat(2, 1fr);
     gap: 20px;
     font-size: 30px;
@@ -92,18 +92,20 @@ a {
 
 .redBar {
     background-color: rgba(115, 3, 6, 0.5);
-    padding: 10px 180px;
+    padding: 10px 100px 0 100px;
     color: white;
+    width: 84%;
+    text-align: center;
 }
 
 .redBar:first-child {
     justify-self: start;
-    grid-area: 2/1/1/7;
+    grid-area: 1/1/1/span 8;
 }
 /*end */
 .redBar:nth-child(2) {
-    justify-self: end;
-    grid-area: 2/2/2/span 7;
+    justify-self: start;
+    grid-area: 2/4/2/span 8;
 }
 
 .menu-container {
