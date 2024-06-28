@@ -29,6 +29,7 @@ body {
 
 #cozy {
     background-image: url('assets/cosy.jpg');
+    border-bottom: none;
 }
 
 
