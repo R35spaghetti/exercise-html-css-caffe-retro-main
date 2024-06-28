@@ -12,9 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
     height: 100vh;
     border-bottom: rgb(141, 0, 1) solid 1rem;
 }
